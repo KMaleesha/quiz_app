@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'next_page.dart';
+import 'quiz.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<Homepage> createState() {
-    return _HomepageState();
+  State<HomePage> createState() {
+    return _HomePageState();
   }
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(context) {
     return Column(
@@ -19,7 +19,15 @@ class _HomepageState extends State<Homepage> {
         Image.asset(
           "assets/images/quiz_logo.png",
           width: 300,
+          color: Color.fromARGB(255, 249, 188, 7),
         ),
+        // Opacity(
+        //   opacity: 0.6,
+        //   child: Image.asset(
+        //     "assets/images/quiz_logo.png",
+        //     width: 300,
+        //   ),
+        // ),
         const SizedBox(
           height: 50,
         ),
@@ -30,20 +38,23 @@ class _HomepageState extends State<Homepage> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const NextPage()),
-              );
-            },
-            child: const Text(
-              "Start Quiz",
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black),
-            ))
+        const SizedBox(
+          height: 20,
+        ),
+        OutlinedButton.icon(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Quiz()),
+            );
+          },
+          label: const Text(
+            "Start Quiz",
+            style: TextStyle(
+                fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black),
+          ),
+          icon: const Icon(Icons.arrow_right_alt_outlined),
+        ),
       ],
     );
   }

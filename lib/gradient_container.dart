@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  final Widget child; // Accept child widget
+
+  const GradientContainer(this.child, {super.key});
 
   @override
   Widget build(context) {
@@ -13,9 +14,7 @@ class GradientContainer extends StatelessWidget {
           Color.fromARGB(255, 97, 177, 242)
         ]),
       ),
-      child: const Center(
-        child: HomePage(),
-      ),
+      child: Center(child: child),
     );
   }
 }

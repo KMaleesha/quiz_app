@@ -18,20 +18,25 @@ class _QuestionState extends State<Question> {
 
     return SizedBox(
       width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            currentQuestion.text,
-            style: const TextStyle(
-              color: Colors.black,
+      child: Container(
+        margin: const EdgeInsets.all(30),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              currentQuestion.text,
+              style: const TextStyle(
+                color: Colors.black,
+              ),
+              textAlign: TextAlign.center,
             ),
-          ),
-          const SizedBox(height: 30),
-          ...currentQuestion.answer.map((answer) {
-            return AnswerButton(answerText: answer, onTap: () {});
-          }),
-        ],
+            const SizedBox(height: 30),
+            ...currentQuestion.answer.map((answer) {
+              return AnswerButton(answerText: answer, onTap: () {});
+            }),
+          ],
+        ),
       ),
     );
   }

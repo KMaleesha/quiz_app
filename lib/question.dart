@@ -12,9 +12,17 @@ class Question extends StatefulWidget {
 }
 
 class _QuestionState extends State<Question> {
+  var currentQuestionIndex = 0;
+
+  void answerQuestion() {
+    setState(() {
+      currentQuestionIndex++;
+    });
+  }
+
   @override
   Widget build(context) {
-    final currentQuestion = questions[0];
+    final currentQuestion = questions[currentQuestionIndex];
 
     return SizedBox(
       width: double.infinity,
@@ -32,8 +40,8 @@ class _QuestionState extends State<Question> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
-            ...currentQuestion.answer.map((answer) {
-              return AnswerButton(answerText: answer, onTap: () {});
+            ...currentQuestion.getShuffledAnswer().map((answer) {
+              return AnswerButton(answerText: answer, onTap: answerQuestion);
             }),
           ],
         ),

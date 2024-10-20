@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'gradient_container.dart';
 
 class HomePage extends StatefulWidget {
@@ -28,9 +29,9 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 50,
             ),
-            const Text(
+            Text(
               "Learn Flutter the fun way!",
-              style: TextStyle(
+              style: GoogleFonts.lato(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
               ),

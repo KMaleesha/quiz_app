@@ -10,6 +10,7 @@ This is a simple Android mobile app designed to let users play a quiz consisting
 Technologies: Flutter, Dart, Android studio.
 
 Install the apk and let's play!!
+
 ![Screenshot 2024-11-06 144154](https://github.com/user-attachments/assets/071ed376-48cb-401d-95e3-01d4ba8a6a81)
 
 ## Getting Started

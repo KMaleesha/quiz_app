@@ -1,6 +1,16 @@
 # quiz_app
+This is a simple Android mobile app designed to let users play a quiz consisting of 10 questions. The app allows users to answer multiple-choice questions and displays their results at the end. The app tracks the number of correct answers and displays the correct answers for each question after the quiz ends.
 
-A new Flutter project.
+## Features
+* 10 quiz questions with multiple-choice answers.
+* Displays correct answers and user's answers after completing the quiz.
+* Option to restart the quiz.
+* User-friendly interface with simple navigation.
+
+Technologies: Flutter, Dart, Android studio.
+
+Install the apk and let's play!!
+![Screenshot 2024-11-06 144154](https://github.com/user-attachments/assets/071ed376-48cb-401d-95e3-01d4ba8a6a81)
 
 ## Getting Started
 

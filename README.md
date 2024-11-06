@@ -11,7 +11,7 @@ Technologies: Flutter, Dart, Android studio.
 
 Install the apk and let's play!!
 
-![Screenshot 2024-11-06 144154](https://github.com/user-attachments/assets/071ed376-48cb-401d-95e3-01d4ba8a6a81)
+![Screenshot 2024-11-06 144154](https://github.com/user-attachments/assets/b0edc44f-f8a6-44f2-add9-746acceb7349)
 
 ## Getting Started
 
